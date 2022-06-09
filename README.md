@@ -40,7 +40,7 @@ FreeAct/
 
 
 # Licensing
-MiROS is [licensed](LICENSE.txt) under the GPLv3 open source license.
+MiROS is [licensed](LICENSE) under the GPLv3 open source license.
 
 
 # Comments/Discussion
