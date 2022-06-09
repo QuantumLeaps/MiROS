@@ -1,3 +1,7 @@
+## Brought to you by:
+[![Quantum Leaps](https://www.state-machine.com/attachments/logo_ql_400.png)](https://www.state-machine.co)
+
+---------------------------------------------------------------------
 # What is it?
 "MiROS" is a Minimal Real-Time Operating System (RTOS) kernel for ARM Cortex-M.
 It supports preemptive, priortity-based multithreading, fully compliant with
@@ -15,13 +19,10 @@ presentation of the concepts, but without dealing with various corner cases,
 portability, or error handling. For these reasons, the software is generally
 NOT intended or recommended for use in commercial\applications.
 
-
 [![MiROS on YouTube: RTOS part-2](img/MiROS.jpg)](https://youtu.be/PKml9ki3178)
 
 
----------------------------------------------------------------------
 # Directories and Files
-
 ```
 FreeAct/
 +-3rd_party/       - third-party software (needed in the examples)
@@ -37,17 +38,14 @@ FreeAct/
 | +-MiROS.c        - MiROS implementation
 ```
 
----------------------------------------------------------------------
+
 # Licensing
 MiROS is [licensed](LICENSE.txt) under the GPLv3 open source license.
 
 
----------------------------------------------------------------------
 # Comments/Discussion
 If you'd like to discuss MiROS or related subjects, plese use the ["Issues" tab](https://github.com/QuantumLeaps/MiROS/issues).
 
 
----------------------------------------------------------------------
 # Contact Information
-
 [state-machine.com](https://www.state-machine.com)
