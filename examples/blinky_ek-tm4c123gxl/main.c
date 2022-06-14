@@ -1,5 +1,5 @@
 #include <stdint.h>
-#include "MiROS.h"
+#include "miros.h"
 #include "bsp.h"
 
 uint32_t stack_blinky1[40];

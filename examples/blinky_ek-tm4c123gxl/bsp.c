@@ -2,7 +2,7 @@
 #include <stdint.h>  /* Standard integers. WG14/N843 C99 Standard */
 
 #include "bsp.h"
-#include "MiROS.h"
+#include "miros.h"
 #include "TM4C123GH6PM.h" /* the TM4C MCU Peripheral Access Layer (TI) */
 
 /* on-board LEDs */

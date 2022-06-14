@@ -24,19 +24,41 @@ NOT intended or recommended for use in commercial\applications.
 
 # Directories and Files
 ```
-FreeAct/
+MiROS/
 +-3rd_party/       - third-party software (needed in the examples)
 | +-CMSIS/         - ARM CMSIS
-| +-ek-tm4c123gxl/ - low-level code to support the EK-TM4C123GX board
+| +-ek-tm4c123gxl/ - low-level code to support EK-TM4C123GX board
+| +-nucleo-l152re/ - low-level code to support STM32 NUCLEO L152RE board
 |
 +-examples/
-| +-blinky-tm4c/   - Blinky exammple for the EK-TM4C123GX board
+| +-blinky_ek-tm4c123gxl/  - Blinky exammple for EK-TM4C123GX board
+|   +-armclang/            - project for ARM/KEIL uVision with ARMCLANG
+|   +-gnu/                 - project for GNU-ARM with simple Makefile
+|   +-iar/                 - project for IAR EWARM
 |
-+-inc/             - include directory
-| +-MiROS.h        - MiROS interface
-+-src/             - source directory
-| +-MiROS.c        - MiROS implementation
+| +-blinky_nucleo-l152re/  - Blinky exammple for STM32 NUCLEO L152RE
+|   +-armclang/            - project for ARM/KEIL uVision with ARMCLANG
+|   +-gnu/                 - project for GNU-ARM with simple Makefile
+|   +-iar/                 - project for IAR EWARM
+|
++-include/                 - include directory
+| +-miros.h                - MiROS interface
++-src/                     - source directory
+|   +-miros_armclang.c     - MiROS implementation for ARMCLANG
+|   +-miros_gnu.c          - MiROS implementation for GNU-ARM
+|   +-miros_iar.c          - MiROS implementation for IAR
 ```
+
+
+# Building the Examples
+MiROS comes with the "Blinky" examples for the boards listed above.
+
+To build and run the examples, inside the "examples" directory select
+the "Blinky" version for your board and then, inside that sub-directory
+select the toolchain (ARMCLANG, GNU-ARM, or IAR). That sub-directory
+contains the project that you can open with the IDE (uVision or IAR).
+The GNU-ARM project consists of a simple Makefile, which you can run
+from the command-line.
 
 
 # Licensing
