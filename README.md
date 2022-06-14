@@ -32,10 +32,10 @@ MiROS/
 |
 +-examples/
 | +-blinky_ek-tm4c123gxl/  - Blinky exammple for EK-TM4C123GX board
-|   +-armclang/            - project for ARM/KEIL uVision with ARMCLANG
-|   +-gnu/                 - project for GNU-ARM with simple Makefile
-|   +-iar/                 - project for IAR EWARM
-|
+| | +-armclang/            - project for ARM/KEIL uVision with ARMCLANG
+| | +-gnu/                 - project for GNU-ARM with simple Makefile
+| | +-iar/                 - project for IAR EWARM
+| |
 | +-blinky_nucleo-l152re/  - Blinky exammple for STM32 NUCLEO L152RE
 |   +-armclang/            - project for ARM/KEIL uVision with ARMCLANG
 |   +-gnu/                 - project for GNU-ARM with simple Makefile
