@@ -426,7 +426,7 @@
             <File>
               <FileName>miros_armclang.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\src\armclang\miros_armclang.c</FilePath>
+              <FilePath>..\..\..\src\armclang\miros.c</FilePath>
             </File>
             <File>
               <FileName>miros.h</FileName>
@@ -857,7 +857,7 @@
             <File>
               <FileName>miros_armclang.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\src\armclang\miros_armclang.c</FilePath>
+              <FilePath>..\..\..\src\armclang\miros.c</FilePath>
             </File>
             <File>
               <FileName>miros.h</FileName>

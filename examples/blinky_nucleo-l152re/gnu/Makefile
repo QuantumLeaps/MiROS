@@ -78,7 +78,7 @@ ASM_SRCS :=
 C_SRCS := \
 	main.c \
 	bsp.c \
-	miros_gnu.c \
+	miros.c \
 	system_stm32l1xx.c \
 	startup_stm32l1xx.c
 

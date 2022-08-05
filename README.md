@@ -5,9 +5,9 @@
 # What is it?
 "MiROS" is a Minimal Real-Time Operating System (RTOS) kernel for ARM Cortex-M.
 It supports preemptive, priortity-based multithreading, fully compliant with
-RMA/RMS (Rate-Monotonic Analysis/Scheduling). It is currently written for
-ARM/KEIL MDK (uVision), but can easily be ported to other toolchains as well.
+RMA/RMS (Rate-Monotonic Analysis/Scheduling).
 
+>NOTE<br>
 MiROS is a teaching aid used in the "Modern Embedded Programming" video course
 on YouTube:
 
@@ -22,31 +22,52 @@ NOT intended or recommended for use in commercial\applications.
 [![MiROS on YouTube: RTOS part-2](img/MiROS.jpg)](https://youtu.be/PKml9ki3178)
 
 
+# Supported Toolchains
+MiROS is available for the following embedded toolchains:
+- ARM/KEIL MDK (uVision)
+- GNU-ARM (Makefile projects)
+- IAR EWARM
+
+# Supported Embedded Boards
+Currently, MiROS examples are available for the following embedded boards:
+
+- EK-TM4C123GXL (TivaC LaunchPad)
+
+<p align="center"><img src="img/bd_EK-TM4C123GXL.png"/></p>
+
+- STM32 NUCLEO-L152RE
+
+<p align="center"><img src="img/bd_NUCLEO-L152RE.png"/></p>
+
+
 # Directories and Files
 ```
 MiROS/
-+-3rd_party/       - third-party software (needed in the examples)
-| +-CMSIS/         - ARM CMSIS
-| +-ek-tm4c123gxl/ - low-level code to support EK-TM4C123GX board
-| +-nucleo-l152re/ - low-level code to support STM32 NUCLEO L152RE board
++---3rd_party/         - third-party software (needed in the examples)
+|   +---CMSIS/         - ARM CMSIS
+|   +---ek-tm4c123gxl/ - low-level code to support EK-TM4C123GX board
+|   +---nucleo-l152re/ - low-level code to support STM32 NUCLEO L152RE board
 |
-+-examples/
-| +-blinky_ek-tm4c123gxl/  - Blinky exammple for EK-TM4C123GX board
-| | +-armclang/            - project for ARM/KEIL uVision with ARMCLANG
-| | +-gnu/                 - project for GNU-ARM with simple Makefile
-| | +-iar/                 - project for IAR EWARM
-| |
-| +-blinky_nucleo-l152re/  - Blinky exammple for STM32 NUCLEO L152RE
-|   +-armclang/            - project for ARM/KEIL uVision with ARMCLANG
-|   +-gnu/                 - project for GNU-ARM with simple Makefile
-|   +-iar/                 - project for IAR EWARM
++---examples/
+|   +---blinky_ek-tm4c123gxl/ - Blinky exammple for EK-TM4C123GX board
+|   |   +---armclang/         - project for ARM/KEIL uVision with ARMCLANG
+|   |   +---gnu/              - project for GNU-ARM with simple Makefile
+|   |   +---iar/              - project for IAR EWARM
+|   |
+|   +---blinky_nucleo-l152re/ - Blinky exammple for STM32 NUCLEO-L152RE
+|       +---armclang/         - project for ARM/KEIL uVision with ARMCLANG
+|       +---gnu/              - project for GNU-ARM with simple Makefile
+|       +---iar/              - project for IAR EWARM
 |
-+-include/                 - include directory
-| +-miros.h                - MiROS interface
-+-src/                     - source directory
-|   +-miros_armclang.c     - MiROS implementation for ARMCLANG
-|   +-miros_gnu.c          - MiROS implementation for GNU-ARM
-|   +-miros_iar.c          - MiROS implementation for IAR
++---include/           - include directory
+|       miros.h        - MiROS API
++---src/               - MiROS source code
+|   +---armclang/
+|   |      miros.c     - MiROS implementation for ARMCLANG
+|   +---gnu/
+|   |      miros.c     - MiROS implementation for GNU-ARM
+|   +---iar/
+|   |      miros.c     - MiROS implementation for IAR EWARM
 ```
 
 
@@ -69,5 +90,11 @@ MiROS is [licensed](LICENSE) under the GPLv3 open source license.
 If you'd like to discuss MiROS or related subjects, plese use the ["Issues" tab](https://github.com/QuantumLeaps/MiROS/issues).
 
 
+# How to Help this Project?
+If you like this project, please give it a star (in the upper-right corner of your browser window):
+
+![GitHub star](img/github-star.jpg)
+
+
 # Contact Information
-[state-machine.com](https://www.state-machine.com)
+[state-machine.com](https://www.state-machine.com/video-course)

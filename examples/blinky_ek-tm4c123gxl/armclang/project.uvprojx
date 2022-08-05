@@ -424,9 +424,9 @@
           <GroupName>MiROS</GroupName>
           <Files>
             <File>
-              <FileName>miros_armclang.c</FileName>
+              <FileName>miros.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\src\armclang\miros_armclang.c</FilePath>
+              <FilePath>..\..\..\src\armclang\miros.c</FilePath>
             </File>
           </Files>
         </Group>
