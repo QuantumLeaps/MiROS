@@ -31,13 +31,17 @@ MiROS is available for the following embedded toolchains:
 # Supported Embedded Boards
 Currently, MiROS examples are available for the following embedded boards:
 
-- EK-TM4C123GXL (TivaC LaunchPad)
+- EK-TM4C123GXL (TivaC LaunchPad, ARM Cortex-M4F)
 
 <p align="center"><img src="img/bd_EK-TM4C123GXL.png"/></p>
 
-- STM32 NUCLEO-L152RE
+- STM32 NUCLEO-L152RE (ARM Cortex-M3)
 
 <p align="center"><img src="img/bd_NUCLEO-L152RE.png"/></p>
+
+- STM32 NUCLEO-C031C6 (ARM Cortex-M0+)
+
+<p align="center"><img src="img/bd_NUCLEO-C031C6.jpg"/></p>
 
 
 # Directories and Files
@@ -46,6 +50,7 @@ MiROS/
 +---3rd_party/         - third-party software (needed in the examples)
 |   +---CMSIS/         - ARM CMSIS
 |   +---ek-tm4c123gxl/ - low-level code to support EK-TM4C123GX board
+|   +---nucleo-c031c6/ - low-level code to support STM32 NUCLEO LC031C6 board
 |   +---nucleo-l152re/ - low-level code to support STM32 NUCLEO L152RE board
 |
 +---examples/
@@ -53,6 +58,11 @@ MiROS/
 |   |   +---armclang/         - project for ARM/KEIL uVision with ARMCLANG
 |   |   +---gnu/              - project for GNU-ARM with simple Makefile
 |   |   +---iar/              - project for IAR EWARM
+|   |
+|   +---blinky_nucleo-c031c6/ - Blinky exammple for STM32 NUCLEO-C031C6
+|       +---armclang/         - project for ARM/KEIL uVision with ARMCLANG
+|       +---gnu/              - project for GNU-ARM with simple Makefile
+|       +---iar/              - project for IAR EWARM
 |   |
 |   +---blinky_nucleo-l152re/ - Blinky exammple for STM32 NUCLEO-L152RE
 |       +---armclang/         - project for ARM/KEIL uVision with ARMCLANG
@@ -93,7 +103,7 @@ If you'd like to discuss MiROS or related subjects, plese use the ["Issues" tab]
 # How to Help this Project?
 If you like this project, please give it a star (in the upper-right corner of your browser window):
 
-![GitHub star](img/github-star.jpg)
+<p align="center"><img src="img/github-star.jpg"/></p>
 
 
 # Contact Information
